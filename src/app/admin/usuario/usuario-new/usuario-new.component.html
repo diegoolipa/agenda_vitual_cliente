@@ -1,0 +1,40 @@
+<h3>Nuevo Usuario</h3>
+
+<form (ngSubmit)="create()">
+  <div>
+    <label for="nombres">Nombres</label>
+    <input type="text"
+           id="nombres"
+           placeholder="Nombres"
+           [(ngModel)]="usuario.nombres"
+           name="nombres">
+  </div>
+  <div>
+    <label for="apellidos">Apellidos</label>
+    <input type="text"
+           id="apellidos"
+           placeholder="Apellidos"
+           [(ngModel)]="usuario.apellidos"
+           name="apellidos">
+  </div>
+  <div>
+    <label for="email">Email</label>
+    <input type="text"
+           id="email"
+           placeholder="Email"
+           [(ngModel)]="usuario.email"
+           name="email">
+  </div>
+  <div>
+    <label for="password">Contaseña</label>
+    <input type="password"
+           id="password"
+           placeholder="Contraseña"
+           [(ngModel)]="usuario.password"
+           name="password">
+  </div>
+
+  <button>
+    Guardar
+  </button>
+</form>

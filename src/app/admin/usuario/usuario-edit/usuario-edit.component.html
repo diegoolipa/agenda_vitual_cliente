@@ -1,0 +1,32 @@
+<h3>Actualizar Usuario</h3>
+
+<form (ngSubmit)="update()" *ngIf="usuario">
+  <div>
+    <label for="nombres">Nombres</label>
+    <input type="texto"
+           id="nombres"
+           placeholder="Nombres"
+           [(ngModel)]="usuario.nombres"
+           name="nombres">
+  </div>
+  <div>
+    <label for="apellidos">Apellidos</label>
+    <input type="texto"
+           id="apellidos"
+           placeholder="Apellidos"
+           [(ngModel)]="usuario.apellidos"
+           name="apellidos">
+  </div>
+  <div>
+    <label for="email">Email</label>
+    <input type="precio"
+           id="email"
+           placeholder="Email"
+           [(ngModel)]="usuario.email"
+           name="email">
+  </div>
+
+  <button>
+    Guardar
+  </button>
+</form>
